@@ -1,0 +1,13 @@
+@Library('olcne-pipeline') _
+import com.oracle.olcne.pipeline.BranchPattern
+
+String version = "0.9.1"
+String imageTag = 'v' + version
+
+imagePipeline(
+        branchPattern: new BranchPattern(master: 'oracle/release/1.24.1', feature: 'feature/.*'),
+        containers: [('container-registry.oracle.com/olcne/csiaddons-k8s-sidecar:' + imageTag ): 'olcne/csiaddons-k8s-sidecar:' + imageTag],
+        platforms: [ 'ol8', 'ol9'],
+        architectures: ['x86_64', 'aarch64'],
+        buildScript: "sh olm/build-image.sh",
+)
