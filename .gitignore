@@ -30,3 +30,6 @@ config/manifests/bases/csi-addons.clusterserviceversion.yaml
 *.swp
 *.swo
 *~
+
+# yum repos
+*.repo*

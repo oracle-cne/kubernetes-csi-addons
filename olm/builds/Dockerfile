@@ -1,8 +1,11 @@
 FROM container-registry.oracle.com/os/oraclelinux:9 AS builder
 
+#COPY /etc/yum.repos.d/* /etc/yum.repos.d/
+COPY *.repo /etc/yum.repos.d/
+
 RUN dnf update -y && \
     dnf config-manager --enable ol9_codeready_builder && \
-    dnf -y install git make golang protobuf-compiler && \
+    dnf -y install git make golang>=1.23 protobuf-compiler && \
     dnf clean all && rm -rf /var/cache/dnf
 
 # Copy the contents of the repository
