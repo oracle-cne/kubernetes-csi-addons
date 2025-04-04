@@ -9,8 +9,6 @@ version="0.12.0"
 registry="container-registry.oracle.com/olcne"
 docker_tag=${registry}/${name}:v${version}
 
-dnf repolist
-
 "${CONTAINER_CLI}" build --pull \
     --build-arg https_proxy=${https_proxy} \
     --volume /etc/yum.repos.d:/etc/yum.repos.d \
