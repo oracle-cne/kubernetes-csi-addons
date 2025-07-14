@@ -1793,7 +1793,22 @@ gomodules.xyz/jsonpatch/v2
 SPDX:Apache-2.0
 
 == Copyright
-Copyright {yyyy} {name of copyright owner}
+Copyright 2015 Matthew Baird mattbaird@gmail.com
+Copyright 2016 GitHub noreply@github.com
+Copyright 2016 Tom Michaud tom.michaud@gmail.com
+Copyright 2017 Clark Archer carcher@drillinginfo.com
+Copyright 2017 Darius Staisiunas darius@uber.com
+Copyright 2017 GitHub noreply@github.com
+Copyright 2017 Jaime Pillora dev@jpillora.com
+Copyright 2018 GitHub noreply@github.com
+Copyright 2018 tamal tamal@appscode.com
+Copyright 2019 GitHub noreply@github.com
+Copyright 2019 Tamal Saha tamal@appscode.com
+Copyright 2020 GitHub noreply@github.com
+Copyright 2021 GitHub noreply@github.com
+Copyright 2021 Tamal Saha tamal@appscode.com
+Copyright 2023 GitHub noreply@github.com
+Copyright 2023 John Howard howardjohn@google.com
 
 --------------------------------- (separator) ----------------------------------
 
